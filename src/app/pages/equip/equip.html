@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Atribuições - Angular</title>
+  <link rel="stylesheet" href="equip.css">
+</head>
+<body>
+    <div class="manual-container">
+        <div class="header">
+            <h1>Manual de Atribuições</h1>
+           <button class="back-button" onclick="voltar()">← Voltar</button>
+        </div>
+
+        <div class="content">
+            <div class="topic-card" id="suporte-card">
+                <h2>Suporte de Rua</h2>
+                <p>Gerar resultados D-1, garantir frota e comunicação com clientes, assegurar metas e apresentar dados ao supervisor.</p>
+                <button class="details-button" onclick="toggleDetails('suporte')">
+                    <span>Detalhes</span>
+                    <i class="fas fa-chevron-down button-icon" id="suporte-icon"></i>
+                </button>
+
+                <div class="details-content" id="suporte-content">
+                    <h3>Atribuições do Suporte de Rua</h3>
+                    <p>O suporte de rua é responsável por garantir a eficiência operacional no campo, assegurando que todos os processos estejam alinhados com as metas estabelecidas.</p>
+
+                    <div class="step">
+                        <h4>Análise de Resultados D-1</h4>
+                        <ul>
+                            <li>Coletar e analisar os dados do dia anterior (D-1)</li>
+                            <li>Identificar pontos de melhoria e oportunidades</li>
+                            <li>Preparar relatórios concisos para a gestão</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Gestão de Frota</h4>
+                        <ul>
+                            <li>Garantir que a frota esteja em condições adequadas de uso</li>
+                            <li>Monitorar a disponibilidade de veículos e equipamentos</li>
+                            <li>Coordenar manutenções preventivas e corretivas</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Comunicação com Clientes</h4>
+                        <ul>
+                            <li>Manter canal de comunicação aberto com clientes</li>
+                            <li>Resolver problemas e dúvidas de forma ágil</li>
+                            <li>Garantir satisfação e fidelização</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Apresentação de Resultados</h4>
+                        <ul>
+                            <li>Preparar e apresentar dados ao supervisor</li>
+                            <li>Participar de reuniões diárias (Daily)</li>
+                            <li>Propor planos de ação para melhorias</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>O suporte de rua é essencial para a operação, atuando como elo entre a equipe de campo, gestão e clientes, garantindo que todos os processos estejam alinhados e as metas sejam atingidas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestão de Pessoas -->
+            <div class="topic-card" id="gestao-card">
+                <h2>Gestão de Pessoas</h2>
+                <p>Contratação e demissão, engajamento, redução de absenteísmo, treinamentos e integração de novos colaboradores.</p>
+                <button class="details-button" onclick="toggleDetails('gestao')">
+                    <span>Detalhes</span>
+                    <i class="fas fa-chevron-down button-icon" id="gestao-icon"></i>
+                </button>
+
+                <div class="details-content" id="gestao-content">
+                    <h3>Gestão de Pessoas: Estratégias e Práticas</h3>
+                    <p>A gestão de pessoas é fundamental para manter uma equipe motivada, produtiva e alinhada com os objetivos organizacionais.</p>
+
+                    <div class="step">
+                        <h4>Processos de Admissão e Demissão</h4>
+                        <ul>
+                            <li>Conduzir processos seletivos alinhados com a cultura organizacional</li>
+                            <li>Orientar e acompanhar a integração de novos colaboradores</li>
+                            <li>Gerir processos de desligamento de forma ética e transparente</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Engajamento e Motivação</h4>
+                        <ul>
+                            <li>Desenvolver programas de reconhecimento e valorização</li>
+                            <li>Promover clima organizacional positivo</li>
+                            <li>Implementar pesquisas de satisfação e clima organizacional</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Redução de Absenteísmo</h4>
+                        <ul>
+                            <li>Monitorar indicadores de frequência e pontualidade</li>
+                            <li>Identificar causas raízes do absenteísmo</li>
+                            <li>Implementar ações preventivas e corretivas</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Treinamento e Desenvolvimento</h4>
+                        <ul>
+                            <li>Identificar necessidades de treinamento</li>
+                            <li>Planejar e executar programas de capacitação</li>
+                            <li>Acompanhar a efetividade dos treinamentos realizados</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Uma gestão de pessoas eficaz contribui diretamente para os resultados organizacionais, criando um ambiente onde os colaboradores possam desenvolver seu potencial máximo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inadimplência -->
+            <div class="topic-card" id="inadimplencia-card">
+                <h2>Inadimplência</h2>
+                <p>Controle de ligações, investigações, relatórios rotineiros e comunicação dos resultados.</p>
+                <button class="details-button" onclick="toggleDetails('inadimplencia')">
+                    <span>Detalhes</span>
+                    <i class="fas fa-chevron-down button-icon" id="inadimplencia-icon"></i>
+                </button>
+
+                <div class="details-content" id="inadimplencia-content">
+                    <h3>Gestão de Inadimplência: Estratégias e Controle</h3>
+                    <p>O controle da inadimplência é crucial para a saúde financeira da organização, requerendo processos sistemáticos e eficientes.</p>
+
+                    <div class="step">
+                        <h4>Controle de Ligações</h4>
+                        <ul>
+                            <li>Estabelecer protocolos para contato com clientes inadimplentes</li>
+                            <li>Monitorar a efetividade das abordagens utilizadas</li>
+                            <li>Treinar a equipe para comunicação assertiva e eficaz</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Processos de Investigação</h4>
+                        <ul>
+                            <li>Desenvolver métodos para análise de casos de inadimplência</li>
+                            <li>Utilizar ferramentas e sistemas para rastreamento de informações</li>
+                            <li>Identificar padrões e tendências na inadimplência</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Relatórios e Comunicação</h4>
+                        <ul>
+                            <li>Elaborar relatórios periódicos sobre a carteira inadimplente</li>
+                            <li>Comunicar resultados à gestão e equipes envolvidas</li>
+                            <li>Estabelecer indicadores de performance para acompanhamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Estratégias de Recuperação</h4>
+                        <ul>
+                            <li>Desenvolver planos de negociação personalizados</li>
+                            <li>Implementar ações preventivas para reduzir a inadimplência</li>
+                            <li>Estabelecer parcerias com áreas jurídicas quando necessário</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Uma gestão eficiente da inadimplência combina processos bem estruturados, comunicação eficaz e análise constante de dados para minimizar perdas e manter a saúde financeira.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estado dos cards
+        const cardStates = {
+            suporte: false,
+            gestao: false,
+            inadimplencia: false
+        };
+
+        // Função para alternar os detalhes
+        function toggleDetails(cardType) {
+            const card = document.getElementById(`${cardType}-card`);
+            const content = document.getElementById(`${cardType}-content`);
+            const icon = document.getElementById(`${cardType}-icon`);
+
+            // Alternar estado
+            cardStates[cardType] = !cardStates[cardType];
+
+            // Aplicar mudanças visuais
+            if (cardStates[cardType]) {
+                card.classList.add('expanded');
+                content.classList.add('expanded');
+                icon.classList.add('rotated');
+            } else {
+                card.classList.remove('expanded');
+                content.classList.remove('expanded');
+                icon.classList.remove('rotated');
+            }
+        }
+
+        // Função para voltar
+        function voltar() {
+            alert('Funcionalidade de voltar - em uma aplicação Angular real, isso navegaria para a página anterior');
+        }
+    </script>
+</body>
+</html>

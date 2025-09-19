@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Atribuições</title>
+  <link rel="stylesheet" href="atrib.css">
+</head>
+<body>
+    <div class="manual-container">
+        <div class="header">
+            <h1>Manual de Atribuições</h1>
+            <button class="back-button" onclick="voltar()">← Voltar</button>
+        </div>
+
+        <div class="content">
+            <div class="topic-card">
+                <h2>Suporte de Rua</h2>
+                <p>Gerar e analisar resultados D-1 (One Page)</p>
+                <button class="details-button" onclick="toggleDetails(this)">
+                    <span>Detalhes</span>
+                    <div class="button-icon"></div>
+                </button>
+
+                <div class="details-text2">
+                    <h3>Manual de Análise: Usando o One Page</h3>
+                    <p>Este guia detalha como o líder deve interpretar os dados do One Page para identificar falhas, reconhecer conquistas e direcionar a equipe de forma eficiente.</p>
+
+                    <div class="step">
+                        <h4>Passo 1: Foco na sua Filial</h4>
+                        <ul>
+                            <li>Como líder, sua análise deve se restringir à filial que corresponde a você.</li>
+                            <li>Na tabela, identifique a linha da sua filial para começar a análise dos dados.</li>
+                            <li>Em cada coluna, você verá métricas de desempenho para essa filial, como porcentagens de falta e atraso, e a produtividade média.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Passo 2: Analise os Indicadores de Desempenho</h4>
+                        <ul>
+                            <li><strong>Olhe para os Painéis Superiores:</strong> Eles dão uma visão geral imediata do desempenho. Os números coloridos mostram o desempenho da filial em relação à meta.</li>
+                            <li><strong>Indicadores de Falha (em vermelho):</strong> Preste atenção especial em indicadores como "% Falta". Se esse número estiver alto (acima da meta), isso sinaliza um problema que precisa ser investigado.</li>
+                            <li><strong>Métricas de Desempenho (em verde):</strong> Celebre os sucessos, como um "% Serviços Moto" ou "% < 90 min" que atinjam ou superem a meta, pois indicam um desempenho positivo da equipe.</li>
+                            <li><strong>Produtividade:</strong> Analise a "Produtividade Média". Se o número estiver abaixo da meta, isso pode indicar a necessidade de otimizar processos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Passo 3: Investigação e Prestação de Contas</h4>
+                        <ul>
+                            <li><strong>Identifique as Falhas:</strong> Olhe para as métricas que estão abaixo do esperado. Por exemplo, if o TMA (Tempo Médio de Atendimento) estourou, você deve investigar o motivo. Isso pode estar relacionado a problemas de fluidez na comunicação, falhas nos processos ou dificuldades inesperadas.</li>
+                            <li><strong>Encontre a Causa:</strong>
+                                <ul>
+                                    <li>Olhe para os números: Observe outros indicadores na mesma linha da filial, como a "Quantidade de atrasados" ou a "Quantidade de motos inativas". Um número alto aqui pode explicar por que o TMA aumentou.</li>
+                                    <li>Vá além dos números: A análise não deve se restringir a números. Busque entender a origem dos problemas. Converse com a equipe para descobrir as razões por trás dos números ruins.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Passo 4: Promova a Discussão com a Equipe</h4>
+                        <ul>
+                            <li><strong>Reunião de Alinhamento:</strong> Use o One Page como pauta para uma reunião com os colaboradores. O documento serve como um guia visual para a conversa, garantindo que todos entendam os resultados.</li>
+                            <li><strong>Foco na Solução:</strong> Incentive a equipe a discutir abertamente sobre o que foi bem-sucedido e o que falhou. A conversa deve focar em como melhorar os processos e garantir a fluidez na comunicação.</li>
+                            <li><strong>Ações Corretivas:</strong> Com base na discussão, definam ações concretas para o dia. Isso pode incluir redefinir prioridades, ajustar rotas ou reforçar um processo específico.</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Com essa prática, o One Page se torna mais do que um relatório; ele é uma ferramenta dinâmica para a tomada de decisão ágil e a melhoria contínua da sua equipe.</p>
+                    </div>
+
+                    <img src="/lideres-manual-angular/src/imgatrib/visao_filial.png" alt="onepage_filial" class="manual-image">
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h2>Verificação de Frota e Equipe</h2>
+                <p>Utilize o Rabbot e o One Page para assegurar que a frota e a equipe estejam prontas para a operação diária</p>
+                <button class="details-button" onclick="toggleDetails(this)">
+                    <span>Detalhes</span>
+                    <div class="button-icon"></div>
+                </button>
+
+                <div class="details-text">
+                    <h3>Guia de Verificação Diária: Rabbot e One Page</h3>
+                    <p>Este guia detalha como o líder deve usar o Rabbot e o One Page para assegurar que a frota e a equipe estejam prontas para a operação diária.</p>
+
+                    <div class="step">
+                        <h4>Passo 1: Verifique a Disponibilidade da Frota (Rabbot)</h4>
+                        <p><strong>O que fazer:</strong> Acesse o Rabbot para verificar a situação de cada Veiculo.</p>
+                        <p><strong>O que analisar:</strong></p>
+                        <ul>
+                            <li><strong>Manutenção:</strong> Confirme se os veiculos que precisam de manutenção preventiva estão agendados ou se já foram revisados.</li>
+                            <li><strong>Condições de Uso:</strong> Garanta que todas os veiculos disponíveis estão em condições seguras para rodar.</li>
+                            <li><strong>Disponibilidade:</strong> Verifique se o número de veiculos disponíveis prontas para uso é suficiente para a demanda de serviços do dia.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Passo 2: Verifique a Disponibilidade da Equipe (Rabbot e One Page)</h4>
+                        <p><strong>O que fazer:</strong> Use o Rabbot para conferir a escala de trabalho e, em seguida, verifique os dados no One Page.</p>
+                        <p><strong>O que analisar:</strong></p>
+                        <ul>
+                            <li><strong>Presença:</strong> Confirme se os colaboradores escalados estão prontos para atuar.</li>
+                            <li><strong>Absenteísmo:</strong> Fique atento a ausências ou atrasos. Se um colaborador não estiver disponível, o TMA (Tempo Médio de Atendimento) e o "% de falta" podem ser afetados.</li>
+                            <li><strong>Proatividade:</strong> Se houver um imprevisto (como uma ausência), o líder deve agir rapidamente para encontrar um substituto ou reorganizar a equipe.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Passo 3: Aja para Manter a Operação Fluida</h4>
+                        <ul>
+                            <li><strong>Se a Frota estiver com problemas:</strong> Se houver veiculos em manutenção ou com problemas, o líder precisa reagir rápido. Isso pode significar realocar pilotos ou ajustar o planejamento dos serviços para evitar interrupções.</li>
+                            <li><strong>Se a Equipe estiver com problemas:</strong> Aja proativamente em situações de ausência ou indisponibilidade. A rapidez em encontrar uma solução garante que a operação não sofra interrupções e que os prazos com os clientes sejam cumpridos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Com essa verificação diária, o líder garante que possíveis problemas sejam identificados e resolvidos rapidamente, mantendo a operação fluida e eficiente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h2>Rotas e Serviços</h2>
+                <p>Garantir rotas de serviços de suporte de maneira adequada e serviços adequados para os veiculos corretamente atrelados</p>
+                <button class="details-button" onclick="toggleDetails(this)">
+                    <span>Detalhes</span>
+                    <div class="button-icon"></div>
+                </button>
+                <div class="details-text2">
+                    <h3>Gestão de Rotas e Serviços</h3>
+                    <p>O líder deve garantir que as rotas de serviços sejam planejadas e executadas de forma organizada, minimizando deslocamentos desnecessários e otimizando o tempo da equipe.</p>
+
+                    <div class="step">
+                        <h4>Princípios para uma Boa Gestão de Rotas</h4>
+                        <ul>
+                            <li><strong>Planejamento Antecipado:</strong> Defina as rotas com antecedência, considerando tráfego, distâncias e prioridades de serviço.</li>
+                            <li><strong>Agrupamento por Região:</strong> Agrupe serviços por proximidade geográfica para reduzir tempo de deslocamento.</li>
+                            <li><strong>Flexibilidade:</strong> Mantenha-se preparado para ajustes em tempo real devido a imprevistos.</li>
+                            <li><strong>Comunicação Clara:</strong> Certifique-se de que cada colaborador compreende perfeitamente sua rota e serviços atribuídos.</li>
+                            <li><strong>Senso de Prioridade:</strong> E de suma importancia que o lider saiba quais serviços prirozar, seriços de rua são o serviços que não podem passar de 90 minutos de forma alguma, elaborando rotas onde o prestador passará primeiro nos serviços que estão na rua.
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Atrelamento Correto de Serviços</h4>
+                        <ul>
+                            <li>É nescessario a verificação dos serviços, para que os serviços de recolhiento não sejam atrelados a motos quando carros disponiveis, e que os serviços de conserto não sejam atrelados a carro quando a motos disponiveis, além de certificar que os serviços estejam na tela dos prestadores que estiverem devidamente logados.</li>
+                            <li>Evite designar consertos para motoristas sem insumos.</li>
+                            <li>Monitore continuamente para garantir que não haja falhas no registro de serviços concluídos e para acompanhar de perto o deslocamento do colaborador.</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Uma rota bem estruturada reduz custos, aumenta a produtividade e contribui significativamente para a satisfação do cliente através de prazos mais assertivos.</p>
+                    </div>
+                    <img src="/lideres-manual-angular/src/navebar/img/rotaPontilhada.png" alt="rota_mapa" class="manual-image1">
+                    <img src="/lideres-manual-angular/src/navebar/img/servicoprioridade.png" alt="servicos_de_rua_SLA" class="manual-image">
+
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h2>Resultados</h2>
+                <p>Apresentar resultados do suporte de rua ao supervisor (Daily)</p>
+                <button class="details-button" onclick="toggleDetails(this)">
+                    <span>Detalhes</span>
+                    <div class="button-icon"></div>
+                </button>
+                <div class="details-text2">
+                    <h3>Apresentação de Resultados na Daily</h3>
+                    <p>Apresentar resultados ao supervisor durante as reuniões diárias (Daily) é uma atividade essencial para a transparência e melhoria contínua.</p>
+
+                    <div class="step">
+                        <h4>Preparação para a Daily</h4>
+                        <ul>
+                            <li><strong>Dados Consolidados:</strong> Chegue preparado com informações claras e objetivas.</li>
+                            <li><strong>Indicadores Chave:</strong> Destaque os principais KPIs (Indicadores-Chave de Desempenho) do dia anterior.</li>
+                            <li><strong>Contextualização:</strong> Prepare-se para explicar não apenas os números, mas o contexto por trás deles.</li>
+                            <li><strong>Pontos de Atenção:</strong> Identifique antecipadamente os principais desafios e oportunidades de melhoria.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Estrutura da Apresentação</h4>
+                        <ul>
+                            <li><strong>Conquistas:</strong> Comece destacando o que funcionou bem e os resultados positivos.</li>
+                            <li><strong>Desafios:</strong> Apresente honestamente as dificuldades encontradas.</li>
+                            <li><strong>Análise de Causa-Raiz:</strong> Para problemas identificados, mostre que houve investigação das causas.</li>
+                            <li><strong>Plano de Ação:</strong> Apresente as ações em andamento ou planejadas para corrigir desvios.</li>
+                            <li><strong>Metas para o Dia:</strong> Finalize com os objetivos claros para o dia corrente.</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Essa prática não só demonstra transparência, mas também reforça o compromisso com a melhoria contínua e o alinhamento com os objetivos da organização.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <h2>Domínio Operacional</h2>
+                <p>Dominar processos para resolução de problemas da operação</p>
+                <button class="details-button" onclick="toggleDetails(this)">
+                    <span>Detalhes</span>
+                    <div class="button-icon"></div>
+                </button>
+                <div class="details-text2">
+                    <h3>Domínio dos Processos Operacionais</h3>
+                    <p>O líder precisa conhecer profundamente os processos da operação para responder rapidamente a imprevistos e orientar eficazmente sua equipe.</p>
+
+                    <div class="step">
+                        <h4>Áreas de Conhecimento Essenciais</h4>
+                        <ul>
+                            <li><strong>Fluxos Internos:</strong> Domine todos os processos-chave da operação, desde o atendimento inicial até a finalização do serviço.</li>
+                            <li><strong>Procedimentos de Contingência:</strong> Conheça os protocolos para situações de emergência ou imprevistos.</li>
+                            <li><strong>Regras e Normativas:</strong> Mantenha-se atualizado sobre políticas internas e exigências regulatórias.</li>
+                            <li><strong>Tecnologias e Sistemas:</strong> Domine as ferramentas tecnológicas utilizadas na operação.</li>
+                        </ul>
+                    </div>
+
+                    <div class="step">
+                        <h4>Desenvolvimento de Competências</h4>
+                        <ul>
+                            <li><strong>Aprendizado Contínuo:</strong> Mantenha-se atualizado sobre mudanças em processos e procedimentos.</li>
+                            <li><strong>Troca de Experiências:</strong> Participe ativamente de fóruns e reuniões onde são compartilhadas melhores práticas.</li>
+                            <li><strong>Mentoria:</strong> Busque orientação de supervisores e colegas experientes para aprimorar conhecimentos.</li>
+                            <li><strong>Documentação:</strong> Consulte regularmente manuais e documentações de processos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="conclusion">
+                        <p>Dominar a operação significa ser referência técnica e transmitir segurança para a equipe, garantindo agilidade na resolução de problemas e promovendo um ambiente de confiança e eficiência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(button) {
+            const card = button.parentElement;
+            const details = button.nextElementSibling;
+            const icon = button.querySelector('.button-icon');
+
+            card.classList.toggle('expanded');
+            details.classList.toggle('expanded');
+            if (details.classList.contains('expanded')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function voltar() {
+            alert('Funcionalidade de voltar será implementada');
+        }
+    </script>
+</body>
+</html>
+
