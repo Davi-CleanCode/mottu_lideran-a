@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-inad',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './inad.html',
   styleUrls: ['./inad.css']
 })

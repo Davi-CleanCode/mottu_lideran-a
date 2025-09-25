@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 interface CardItem {
   titulo: string;
@@ -9,6 +10,8 @@ interface CardItem {
 
 @Component({
   selector: 'app-atrib',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './suprua.html',
   styleUrls: ['./suprua.css']
 })

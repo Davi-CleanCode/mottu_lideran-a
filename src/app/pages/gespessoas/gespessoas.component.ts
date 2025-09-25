@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 interface CardItem {
   titulo: string;
@@ -9,6 +10,8 @@ interface CardItem {
 
 @Component({
   selector: 'app-equip',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './gespessoas.html',
   styleUrls: ['./gespessoas.css']
 })
