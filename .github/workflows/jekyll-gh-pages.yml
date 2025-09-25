@@ -50,6 +50,11 @@ jobs:
         # Upload that folder so index.html is at the root of the pages artifact.
         with:
           path: ./dist/lideres-manual-angular/browser
+      - name: Create 404 fallback for SPA
+        run: |
+          if [ -f ./dist/lideres-manual-angular/browser/index.html ]; then
+            cp ./dist/lideres-manual-angular/browser/index.html ./dist/lideres-manual-angular/browser/404.html
+          fi
 
   deploy:
     needs: build
