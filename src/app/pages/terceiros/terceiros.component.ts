@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-gestao',
   imports: [],
   templateUrl: './terceiros.html',
-  styleUrl: './terceiros.css'
+  styleUrls: ['./terceiros.css']
 })
-export class terceiros {
+export class TerceirosComponent {
 
 }

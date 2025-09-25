@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-frota',
   imports: [],
   templateUrl: './gesfrota.html',
-  styleUrl: './gesfrota.css'
+  styleUrls: ['./gesfrota.css']
 })
-export class gesfrota {
+export class GesfrotaComponent {
 
 }

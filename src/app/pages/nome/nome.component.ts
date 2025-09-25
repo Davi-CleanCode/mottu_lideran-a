@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-nome',
   imports: [],
   templateUrl: './nome.html',
-  styleUrl: './nome.css'
+  styleUrls: ['./nome.css']
 })
-export class Nome {
+export class NomeComponent {
 
 }

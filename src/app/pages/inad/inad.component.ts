@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-inad',
   imports: [],
   templateUrl: './inad.html',
-  styleUrl: './inad.css'
+  styleUrls: ['./inad.css']
 })
-export class Inad {
+export class InadComponent{
 
 }

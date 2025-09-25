@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-formacao',
   imports: [],
   templateUrl: './equitrabalho.html',
-  styleUrl: './equitrabalho.css'
+  styleUrls: ['./equitrabalho.css']
 })
-export class equitrabalho {
+export class EquitrabalhoComponent {
 
 }

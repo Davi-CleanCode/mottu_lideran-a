@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-abastecimento',
   imports: [],
   templateUrl: './abastecimento.html',
-  styleUrl: './abastecimento.css'
+  styleUrls: ['./abastecimento.css']
 })
-export class Abastecimento {
+export class AbastecimentoComponent {
 
 }
