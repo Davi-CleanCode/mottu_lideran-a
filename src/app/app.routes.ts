@@ -1,21 +1,30 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AtribComponent } from './atrib/atrib.component';
-import { FormacaoComponent } from './formacao/formacao.component';
-import { GestaoComponent } from './gestao/gestao.component';
-import { InadComponent } from './inad/inad.component';
-import { FrotaComponent } from './frota/frota.component';
-import { EquipComponent } from './equip/equip.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SupruaComponent } from './pages/suprua/suprua.component';
+import { GespessoasComponent } from './pages/gespessoas/gespessoas.component';
+import { InadComponent } from './pages/inad/inad.component';
+import { EquitrabalhoComponent } from './pages/equitrabalho/equitrabalho.component';
+import { GesfrotaComponent } from './pages/gesfrota/gesfrota.component';
+import { TerceirosComponent } from './pages/terceiros/terceiros.component';
+import { AbastecimentoComponent } from './pages/abastecimento/abastecimento.component';
+import { PatioComponent } from './pages/patio/patio.component';
+import { NomeComponent } from '../pages/nome/nome.component.ts';
+
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'atrib', component: AtribComponent },
-  { path: 'formacao', component: FormacaoComponent },
-  { path: 'gestao', component: GestaoComponent },
+  { path: 'suprua', component: SupruaComponent },
+  { path: 'gespessoas', component: GespessoasComponent },
   { path: 'inad', component: InadComponent },
-  { path: 'frota', component: FrotaComponent },
-  { path: 'equip', component: EquipComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: 'equitrabalho', component: EquitrabalhoComponent },
+  { path: 'gesfrota', component: GesfrotaComponent },
+  { path: 'terceiros', component: TerceirosComponent },
+  { path: 'abastecimento', component: AbastecimentoComponent },
+  { path: 'patio', component: PatioComponent },
+  { path: 'nome', component: NomeComponent },
+  { path: '**', redirectTo: 'home' }
 ];
+
+
 

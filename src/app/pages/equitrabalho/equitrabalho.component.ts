@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-formacao',
   imports: [],
-  templateUrl: './formacao.html',
-  styleUrl: './formacao.css'
+  templateUrl: './equitrabalho.html',
+  styleUrl: './equitrabalho.css'
 })
-export class Formacao {
+export class equitrabalho {
 
 }

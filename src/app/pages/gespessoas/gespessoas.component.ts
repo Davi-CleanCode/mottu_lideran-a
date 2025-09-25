@@ -9,11 +9,10 @@ interface CardItem {
 
 @Component({
   selector: 'app-equip',
-  templateUrl: './equip.html',
-  styleUrls: ['./equip.css']
+  templateUrl: './gespessoas.html',
+  styleUrls: ['./gespessoas.css']
 })
-export class EquipComponent {
-  // Use o array de cards para controlar o estado de expansão
+export class GespessoasComponent {
   cards: CardItem[] = [
     {
       titulo: 'Suporte de Rua',

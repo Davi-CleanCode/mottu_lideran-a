@@ -191,7 +191,7 @@
             font-size: 1.1rem;
         }
 
-        .manual-image {
+        .manual-imagesuprua {
             width: 100%;
             border-radius: 5px;
             margin-top: 15px;
@@ -218,3 +218,17 @@
             display: block;
             margin: 25px auto;
         }
+
+          .subtitle-suportederua p {
+            color: #037409;
+        }
+
+        .expagrupada{
+            color: #037409;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-top: 4px solid #0af115;
+        }
+
+

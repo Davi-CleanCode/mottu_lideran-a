@@ -9,12 +9,11 @@ interface CardItem {
 
 @Component({
   selector: 'app-atrib',
-  templateUrl: './atrib.html',
-  styleUrls: ['./atrib.css']
+  templateUrl: './suprua.html',
+  styleUrls: ['./suprua.css']
 })
-export class AtribComponent {
-  currentIndex = 0;
-
+export class SupruaComponent {
+    currentIndex = 0;
   cards: CardItem[] = [
     {
       titulo: 'Suporte de Rua',
@@ -62,18 +61,6 @@ export class AtribComponent {
 
   toggleDetalhes(index: number): void {
     this.cards[index].expandido = !this.cards[index].expandido;
-  }
-
-  nextSlide(): void {
-    this.currentIndex = (this.currentIndex + 1) % this.cards.length;
-  }
-
-  prevSlide(): void {
-    this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
-  }
-
-  goToSlide(index: number): void {
-    this.currentIndex = index;
   }
 
   voltar(): void {
