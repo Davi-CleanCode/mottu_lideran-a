@@ -7,7 +7,7 @@ import { GesfrotaComponent } from './pages/gesfrota/gesfrota.component';
 import { TerceirosComponent } from './pages/terceiros/terceiros.component';
 import { AbastecimentoComponent } from './pages/abastecimento/abastecimento.component';
 import { PatioComponent } from './pages/patio/patio.component';
-import { NomeComponent } from './pages/nome/nome.component';
+
 
 
 export const routes: Routes = [
@@ -20,7 +20,6 @@ export const routes: Routes = [
   { path: 'terceiros', component: TerceirosComponent },
   { path: 'abastecimento', component: AbastecimentoComponent },
   { path: 'patio', component: PatioComponent },
-  { path: 'nome', component: NomeComponent },
   { path: '**', redirectTo: 'home' }
 ];
 
