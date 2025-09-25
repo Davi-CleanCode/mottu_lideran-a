@@ -38,15 +38,18 @@ jobs:
         run: npm ci
 
       - name: Build (production)
-        run: npm run build --if-present
+        # Build with correct base href for GitHub Pages (project site)
+        run: npm run build -- --base-href /mottu_lideran-a/ --deploy-url /mottu_lideran-a/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
+        # The Angular build places index.html in the `browser` folder inside dist for this project.
+        # Upload that folder so index.html is at the root of the pages artifact.
         with:
-          path: ./dist/lideres-manual-angular
+          path: ./dist/lideres-manual-angular/browser
 
   deploy:
     needs: build
